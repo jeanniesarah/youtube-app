@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       title: 'UFC YouTube Stream',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Colors.red,
+        primaryColor: Colors.red[900],
       ),
       home: HomeScreen(),
     );
