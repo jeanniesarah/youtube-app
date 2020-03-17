@@ -21,7 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   _initChannel() async {
     Channel channel = await APIService.instance
-        .fetchChannel(channelId: 'UC6Dy0rQ6zDnQuHQ1EeErGUA');
+        .fetchChannel(channelId: 'UCvgfXK4nTYKudb0rFR6noLA');
     setState(() {
       _channel = channel;
     });
@@ -140,7 +140,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('YouTube Channel'),
+        title: Text('UFC YouTube Stream'),
       ),
       body: _channel != null
           ? NotificationListener<ScrollNotification>(
@@ -167,7 +167,7 @@ class _HomeScreenState extends State<HomeScreen> {
           : Center(
               child: CircularProgressIndicator(
                 valueColor: AlwaysStoppedAnimation<Color>(
-                  Theme.of(context).primaryColor, // Red
+                  Theme.of(context).primaryColor,
                 ),
               ),
             ),

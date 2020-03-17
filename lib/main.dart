@@ -8,10 +8,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter YouTube API',
+      title: 'UFC YouTube Stream',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Colors.deepPurpleAccent,
+        primaryColor: Colors.red,
       ),
       home: HomeScreen(),
     );
